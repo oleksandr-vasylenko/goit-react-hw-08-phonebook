@@ -1,3 +1,3 @@
-goit-react-hw-07-phonebook
+goit-react-hw-08-phonebook
 
-- Phonebook - refactored to async redux
+- Phonebook - User Registration and Log in
