@@ -1,6 +1,10 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectContacts, selectError, selectIsLoading } from 'redux/selectors';
+import {
+  selectContacts,
+  selectError,
+  selectIsLoading,
+} from 'redux/auth/authSelectors';
 
 import { GlobalStyle } from '../../GlobalStyle';
 
@@ -8,7 +12,7 @@ import { ContactsForm } from 'components/ContactsForm/ContactsForm';
 import { Filter } from 'components/Filter/Filter';
 import { ContactsList } from 'components/ContactsList/ContactsList';
 
-import { fetchContacts } from 'redux/operations';
+import { fetchContacts } from 'redux/auth/authApi';
 import { Thumb } from './App.Styled';
 
 export const App = () => {

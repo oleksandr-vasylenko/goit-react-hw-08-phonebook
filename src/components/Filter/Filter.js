@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { filterContacts } from 'redux/filterSlice';
-import { selectFilter } from 'redux/selectors';
+import { filterContacts } from 'redux/filter/filterSlice';
+import { selectFilter } from 'redux/auth/authSelectors';
 import { FilterThumb } from './Filter.Styled';
 
 export const Filter = () => {
