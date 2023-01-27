@@ -1,8 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
-import 'modern-normalize';
+const { createGlobalStyle } = require('styled-components');
 
 export const GlobalStyle = createGlobalStyle`
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,33 +9,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  padding: 24px;
+ padding: 24px;
 
-  background: rgb(251,241,254);
+   background: rgb(251,241,254);
   background: linear-gradient(90deg, rgba(251,241,254,1) 50%, rgba(250,237,241,1) 100%);
-
-
-  line-height: 1.5;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+ul {
+    list-style: none;
+    padding-left: 0;
 }
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 `;

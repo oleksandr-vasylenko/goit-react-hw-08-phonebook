@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
-export const Thumb = styled.section`
+export const Thumb = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
 
   padding: 32px;
+  padding-bottom: 48px;
   max-width: 450px;
   margin-left: auto;
   margin-right: auto;
