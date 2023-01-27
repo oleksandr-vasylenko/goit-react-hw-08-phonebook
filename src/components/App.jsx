@@ -5,7 +5,6 @@ import { NotFound } from 'pages/NotFound';
 import { Login } from 'pages/Login';
 import { Navigation } from './Navigation/Navigation';
 import { GlobalStyle } from 'components/GlobalStyles';
-import Box from '@mui/material/Box';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { refreshUser } from 'redux/auth/authApi';
@@ -24,35 +23,34 @@ export const App = () => {
 
   return (
     <Thumb>
-      <Box sx={{ width: '100%' }}>
-        <Routes>
-          <Route path="/" element={<Navigation />}>
-            <Route index element={<Navigate to="/login" />} />
-            <Route
-              path="/register"
-              element={
-                <RestrictedRoute
-                  redirectTo="/contacts"
-                  component={<Register />}
-                />
-              }
-            />
-            <Route
-              path="/login"
-              element={
-                <RestrictedRoute redirectTo="/contacts" component={<Login />} />
-              }
-            />
-            <Route
-              path="/contacts"
-              element={
-                <PrivateRoute redirectTo="/login" component={<Contacts />} />
-              }
-            />
-          </Route>
-          <Route path="*" element={<NotFound />}></Route>
-        </Routes>
-      </Box>
+      <Routes>
+        <Route path="/" element={<Navigation />}>
+          <Route index element={<Navigate to="/login" />} />
+          <Route
+            path="/register"
+            element={
+              <RestrictedRoute
+                redirectTo="/contacts"
+                component={<Register />}
+              />
+            }
+          />
+          <Route
+            path="/login"
+            element={
+              <RestrictedRoute redirectTo="/contacts" component={<Login />} />
+            }
+          />
+          <Route
+            path="/contacts"
+            element={
+              <PrivateRoute redirectTo="/login" component={<Contacts />} />
+            }
+          />
+        </Route>
+        <Route path="*" element={<NotFound />}></Route>
+      </Routes>
+
       <GlobalStyle />
       <ToastContainer />
     </Thumb>

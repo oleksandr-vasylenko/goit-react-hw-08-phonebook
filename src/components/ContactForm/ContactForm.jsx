@@ -57,7 +57,7 @@ export const ContactForm = () => {
           <TextField
             label="Phone"
             type="tel"
-            name="Number"
+            name="number"
             required
             placeholder="111-11-11"
             onChange={handleInputNumber}
