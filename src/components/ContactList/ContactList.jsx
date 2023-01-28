@@ -27,7 +27,6 @@ export const ContactList = () => {
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell align="center">Avatar</TableCell>
               <TableCell align="center">Name</TableCell>
               <TableCell align="center">Phone</TableCell>
               <TableCell align="center">Delete</TableCell>

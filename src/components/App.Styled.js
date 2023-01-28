@@ -6,7 +6,6 @@ export const Thumb = styled.div`
   align-items: center;
 
   padding: 32px;
-  padding-bottom: 48px;
   max-width: 450px;
   margin-left: auto;
   margin-right: auto;

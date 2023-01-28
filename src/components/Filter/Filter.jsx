@@ -2,6 +2,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getContactsFilter } from 'redux/contacts/contactsSelectors';
 import { setFilter } from 'redux/filter/filterSlice';
 import { TextField } from '@mui/material';
+import { FilterThumb } from './Filter.Styled';
 
 export const Filter = () => {
   const filterName = useSelector(getContactsFilter);
@@ -13,15 +14,17 @@ export const Filter = () => {
   };
 
   return (
-    <TextField
-      label="Search"
-      type="text"
-      value={filterName}
-      onChange={changeFilter}
-      placeholder="Name..."
-      variant="outlined"
-      size="small"
-      fullWidth
-    />
+    <FilterThumb>
+      <TextField
+        label="Search"
+        type="text"
+        value={filterName}
+        onChange={changeFilter}
+        placeholder="Name..."
+        variant="outlined"
+        size="small"
+        fullWidth
+      />
+    </FilterThumb>
   );
 };
