@@ -46,7 +46,7 @@ export const ContactForm = () => {
             required
             placeholder="Name"
             onChange={handleInputName}
-            variant="outlined"
+            variant="standard"
             size="small"
             title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
             inputProps={{
@@ -61,7 +61,7 @@ export const ContactForm = () => {
             required
             placeholder="111-11-11"
             onChange={handleInputNumber}
-            variant="outlined"
+            variant="standard"
             size="small"
             title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
             inputProps={{
@@ -69,9 +69,22 @@ export const ContactForm = () => {
                 '\\+?\\d{1,4}?[-.\\s]?\\(?\\d{1,3}?\\)?[-.\\s]?\\d{1,4}[-.\\s]?\\d{1,4}[-.\\s]?\\d{1,9}',
             }}
           />
-          <Button variant="contained" type="submit">
-            Add
-          </Button>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+            }}
+          >
+            <Button
+              variant="contained"
+              type="submit"
+              style={{
+                minWidth: '150px',
+              }}
+            >
+              Add
+            </Button>
+          </div>
         </Stack>
       </form>
     </Container>

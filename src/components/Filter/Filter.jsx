@@ -21,7 +21,7 @@ export const Filter = () => {
         value={filterName}
         onChange={changeFilter}
         placeholder="Name..."
-        variant="outlined"
+        variant="standard"
         size="small"
         fullWidth
       />
