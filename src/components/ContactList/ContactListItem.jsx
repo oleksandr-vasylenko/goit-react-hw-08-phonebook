@@ -3,7 +3,6 @@ import { useDispatch } from 'react-redux';
 import { deleteContact } from 'redux/contacts/contactsApi';
 import { TableRow, TableCell, IconButton } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
-import Avatar from 'react-avatar';
 import { toast } from 'react-toastify';
 
 export const ContactListItem = ({ id, name, number }) => {

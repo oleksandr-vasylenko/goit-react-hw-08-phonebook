@@ -58,9 +58,22 @@ export const LoginForm = () => {
             variant="outlined"
             size="small"
           />
-          <Button variant="contained" type="submit">
-            {!loading ? 'Login' : <CircularProgress size={28} color="info" />}
-          </Button>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+            }}
+          >
+            <Button
+              variant="contained"
+              type="submit"
+              style={{
+                minWidth: '150px',
+              }}
+            >
+              {!loading ? 'Login' : <CircularProgress size={28} color="info" />}
+            </Button>
+          </div>
         </Stack>
       </form>
     </Container>
