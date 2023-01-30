@@ -29,7 +29,7 @@ export const ContactList = () => {
             <TableRow>
               <TableCell align="center">Name</TableCell>
               <TableCell align="center">Phone</TableCell>
-              <TableCell align="center">Delete</TableCell>
+              <TableCell align="center"></TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
