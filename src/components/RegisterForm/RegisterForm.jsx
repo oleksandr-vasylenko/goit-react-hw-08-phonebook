@@ -49,7 +49,7 @@ export const RegisterForm = () => {
             type="text"
             onChange={handleChange}
             required
-            variant="outlined"
+            variant="standard"
             size="small"
           />
           <TextField
@@ -59,7 +59,7 @@ export const RegisterForm = () => {
             type="email"
             onChange={handleChange}
             required
-            variant="outlined"
+            variant="standard"
             size="small"
           />
           <TextField
@@ -69,7 +69,7 @@ export const RegisterForm = () => {
             type="password"
             onChange={handleChange}
             required
-            variant="outlined"
+            variant="standard"
             size="small"
           />
           <div

@@ -45,7 +45,7 @@ export const LoginForm = () => {
             type="email"
             onChange={handleChange}
             required
-            variant="outlined"
+            variant="standard"
             size="small"
           />
           <TextField
@@ -55,7 +55,7 @@ export const LoginForm = () => {
             type="password"
             onChange={handleChange}
             required
-            variant="outlined"
+            variant="standard"
             size="small"
           />
           <div
