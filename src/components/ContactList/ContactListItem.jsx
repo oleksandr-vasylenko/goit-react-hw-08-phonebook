@@ -19,7 +19,7 @@ export const ContactListItem = ({ id, name, number }) => {
         <IconButton
           // color="error"
           onClick={() => {
-            toast.info('Your contact has been deleted!');
+            toast.info('The contact has been deleted!');
             dispatch(deleteContact(id));
           }}
         >
